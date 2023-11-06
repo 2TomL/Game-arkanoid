@@ -1,12 +1,10 @@
-import { CanvasView } from '../view/CanvasView';
-import { Ball } from '../sprites/Ball';
-import { Brick } from '../sprites/Brick';
-import { Paddle } from '../sprites/Paddle';
-import { Collision } from '../Collision';
-
-import PADDLE_IMAGE from '../images/paddle.png';
-import BALL_IMAGE from '../images/ball.png';
-// Level and colors
+import { CanvasView } from './view/CanvasView';
+import { Ball } from './sprites/Ball';
+import { Brick } from './sprites/Brick';
+import { Paddle } from './sprites/Paddle';
+import { Collision } from './Collision';
+import PADDLE_IMAGE from './images/paddle.png';
+import BALL_IMAGE from './images/ball.png';
 import {
   PADDLE_SPEED,
   PADDLE_WIDTH,
@@ -16,8 +14,7 @@ import {
   BALL_SIZE,
   BALL_STARTX,
   BALL_STARTY
-} from '../setup';
-// Helpers
+} from './setup';
 import { createBricks } from './helpers';
 
 let gameOver = false;
